@@ -9,6 +9,4 @@ const getEmployeeByName = (employeeName) => {
     element.firstName === employeeName || element.lastName === employeeName);
 };
 
-// seu código aqui;
-
 module.exports = getEmployeeByName;
