@@ -7,11 +7,11 @@ describe('Testes da função HandlerElephants', () => {
   it('se a função retorna "undefined" se nenhum parametro for passado', () => {
     expect(handlerElephants()).toBeUndefined();
   });
-  it('se a função retorna um ""erro" se o parametro passado não for uma string', () => {
-    expect(handlerElephants(4)).toMatch('Parâmetro inválido, é necessário uma string');
-  });
   it('se a função retorna "null" quando recebe um parametro inexistente', () => {
     expect(handlerElephants('city')).toBeNull();
+  });
+  it('se a função retorna um ""erro" se o parametro passado não for uma string', () => {
+    expect(handlerElephants(4)).toMatch('Parâmetro inválido, é necessário uma string');
   });
   it('se a função retorna "4" se for passado o parametro count', () => {
     expect(handlerElephants('count')).toBeCloseTo(4);
